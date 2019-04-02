@@ -1,6 +1,6 @@
 body {background-color: coral;}
-div.title {
-  text-align: center;
+.title {
+  color: white;
 }
 
 .communes { 
