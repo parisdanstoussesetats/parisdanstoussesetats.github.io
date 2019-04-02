@@ -2,3 +2,15 @@ body {background-color: coral;}
 div.title {
   text-align: center;
 }
+
+polygon:hover { 
+  	fill: yellow;
+	}
+
+.communes { 
+	fill           : #b9b9b9;
+	fill-opacity   : 1;
+	stroke         : white;
+	stroke-opacity : 1;
+	stroke-width   : 0.002;
+}
