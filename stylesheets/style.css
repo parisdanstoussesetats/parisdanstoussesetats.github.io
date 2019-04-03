@@ -1,11 +1,13 @@
 body {background-color: rgb(208, 240, 172);}
 
 
-​#​tooltip {
-display:none;
-border:1px solid #F00;
-width:150px;
-}​
+.red {
+    color: rgb(255, 71, 47);
+}
+.green {
+    color: rgb(17, 189, 17);
+}
+
 
 .title {
 	margin: 0 auto;
