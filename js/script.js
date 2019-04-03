@@ -30,6 +30,19 @@ var data1 = [['75001', '75002','75008'],
              ['75019', '75016','75007','75014']]
              ;
 
+
+function gameFunction(number) {
+    if (number > 0) {
+        document.getElementById("demo").classList.remove('green')
+        document.getElementById("demo").classList.add('red')
+        document.getElementById("demo").innerHTML = "Perdu"
+    
+  } else {
+    document.getElementById("demo").classList.remove('red')
+    document.getElementById("demo").innerHTML = "Gagné"
+    document.getElementById("demo").classList.add('green');
+  }}
+
 function colourCountry(name, colour) {
     var country = document.getElementById(name);
     document.getElementById(name).classList.add('colour' + colour);
