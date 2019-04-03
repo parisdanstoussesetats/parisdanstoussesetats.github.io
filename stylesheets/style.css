@@ -5,18 +5,36 @@ body {background-color: coral;}
   	color: white;
 }
 
+.map__image{
+    width: 50%;
+    float: left;
+}
 
+.map__list{
+    float: right;
+    width:50%;
+}
+
+.map__image .is-active{
+    fill:blueviolet;
+}
+
+.map__list li.is-active{
+    color:chartreuse;
+    font-weight: bold;
+
+}
 
 .communes { 
 	fill           : #b9b9b9;
 	fill-opacity   : 1;
 	stroke         : white;
 	stroke-opacity : 1;
-	stroke-width   : 0.002;
+	stroke-width   : 0.001;
+    transition: fill 0.3s;
 }
 
 polygon:hover { 
-  	fill: yellow;
+  	fill: blue;
+      transition: fill 0.3s;
 	}
-
-
