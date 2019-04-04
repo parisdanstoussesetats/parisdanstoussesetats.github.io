@@ -13,14 +13,16 @@ paths.forEach(function(path){
     })
     
 })
-*/
-d3.csv("../data/culture.csv").then(function(data) {
-  console.log(data[0]);
+
+d3.csv("../data/culture.csv", function(data){
+    console.log(data);
 });
 
 function displayName(name) {
     document.getElementById('quartier').firstChild.data = name;
 }
+
+
 
 function showFunction(){
     document.getElementById("solution_1").classList.remove('no_display')
