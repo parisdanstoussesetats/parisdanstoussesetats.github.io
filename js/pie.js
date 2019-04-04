@@ -18,7 +18,7 @@ var piesvg = d3.select("body").append("svg")
   .append("g")
     .attr("transform", "translate(" + piewidth / 2 + "," + pieheight / 2 + ")");
 
-d3.csv("music.csv", function(error, data) {
+d3.csv("../data/music.csv", function(error, data) {
     data.forEach(function(d) {
     d.total = +d.total;
 });
