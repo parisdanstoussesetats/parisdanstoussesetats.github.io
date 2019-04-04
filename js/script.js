@@ -13,7 +13,9 @@ paths.forEach(function(path){
     })
     
 }) */
-var data = d3.csv("../data/culture.csv")
+var data = d3.csv("../data/culture.csv",function(data) {
+console.log
+});
 
 console.log(data)
 
