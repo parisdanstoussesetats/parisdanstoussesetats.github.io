@@ -19,6 +19,10 @@ function displayName(name) {
     document.getElementById('quartier').firstChild.data = name;
 }
 
+function showFunction(){
+    document.getElementById('solution_1').classList.remove('no_display')
+}
+
 function gameFunction(number) {
     if (number > 0) {
         document.getElementById("demo").classList.remove('btn-success')
