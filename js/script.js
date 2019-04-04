@@ -1,4 +1,4 @@
- /*
+   /*
 var map = document.querySelector('#map')
 var paths = map.querySelectorAll('.map__image polygon')
 var lists = map.querySelectorAll('.map__list li')
@@ -19,8 +19,21 @@ function displayName(name) {
     document.getElementById('quartier').firstChild.data = name;
 }
 
-function myFunction() {
-  document.getElementById("demo").innerHTML = "Hello World"}
+function gameFunction(number) {
+    if (number > 0) {
+        document.getElementById("demo").classList.remove('btn-success')
+        document.getElementById("seemore").classList.remove('btn-info')
+        document.getElementById("demo").classList.add('btn-danger')
+        document.getElementById("demo").innerHTML = "Perdu"
+    
+  } else {
+    document.getElementById("demo").classList.remove('btn-danger')
+    document.getElementById("demo").innerHTML = "Gagné"
+    document.getElementById("demo").classList.add('btn-success');
+    document.getElementById('seemore').innerHTML = "Voir les résultats"
+    document.getElementById("seemore").classList.add('btn-info')
+
+  }}
 
 var data1 = [['75001', '75002','75008'],
              ['75003', '75009', '75010'],
@@ -29,19 +42,6 @@ var data1 = [['75001', '75002','75008'],
              ['75015', '75017', '75018'],
              ['75019', '75016','75007','75014']]
              ;
-
-
-function gameFunction(number) {
-    if (number > 0) {
-        document.getElementById("demo").classList.remove('green')
-        document.getElementById("demo").classList.add('red')
-        document.getElementById("demo").innerHTML = "Perdu"
-    
-  } else {
-    document.getElementById("demo").classList.remove('red')
-    document.getElementById("demo").innerHTML = "Gagné"
-    document.getElementById("demo").classList.add('green');
-  }}
 
 function colourCountry(name, colour) {
     var country = document.getElementById(name);
