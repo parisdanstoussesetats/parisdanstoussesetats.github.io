@@ -19,7 +19,6 @@ console.log(data[0])
 console.log(data[0].quartier)
 });
 
-console.log(data)
 
 function displayInfo(){
 }
