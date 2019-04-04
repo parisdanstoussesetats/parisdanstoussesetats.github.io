@@ -20,7 +20,7 @@ function displayName(name) {
 }
 
 function showFunction(){
-    document.getElementById('solution_1').classList.remove('no_display')
+    document.getElementById("solution_1").classList.remove('no_display')
 }
 
 function gameFunction(number) {
