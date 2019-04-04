@@ -14,6 +14,9 @@ paths.forEach(function(path){
     
 })
 */
+d3.csv("../data/culture.csv").then(function(data) {
+  console.log(data[0]);
+});
 
 function displayName(name) {
     document.getElementById('quartier').firstChild.data = name;
