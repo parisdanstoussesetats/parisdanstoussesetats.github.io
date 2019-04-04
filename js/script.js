@@ -12,7 +12,7 @@ paths.forEach(function(path){
         document.querySelector('#list_'+id).classList.add("is-active")
     })
     
-})
+}) */
 
 d3.csv("../data/culture.csv", function(data){
     console.log(data);
@@ -20,7 +20,7 @@ d3.csv("../data/culture.csv", function(data){
 
 function displayName(name) {
     document.getElementById('quartier').firstChild.data = name;
-}
+} 
 
 
 
