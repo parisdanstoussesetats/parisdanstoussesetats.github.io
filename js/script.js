@@ -13,12 +13,12 @@ paths.forEach(function(path){
     })
     
 }) */
+var data = d3.csv("../data/culture.csv")
 
-d3.csv("../data/culture.csv", function(data){
-    console.log(data['quartier']);
-    console.log(data['quartier'][0]);
-                
-});
+console.log(data)
+
+function displayInfo(){
+}
 
 function displayName(name) {
     document.getElementById('quartier').firstChild.data = name;
