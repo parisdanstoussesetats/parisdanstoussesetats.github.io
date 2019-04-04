@@ -2,7 +2,7 @@ var piewidth = 600,
     pieheight = 600,
     radius = Math.min(piewidth, pieheight) / 2;
 
-color = d3.scale.ordinal()
+color = d3.scaleBand()
     .range(["#CFF09E", "#A8DBA8", "#79BD9A", "#3B8686", "#0B486B", "#588A70"]);
 
 var arc = d3.svg.arc()
