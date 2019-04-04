@@ -2,17 +2,13 @@
 <html>
 <head>
  
- <style>
-#graph {
-    width: 900px;
-    height: 500px;
-}
-</style>
+ 
 
 <link rel="icon" type="image/png" href="logo.png" />
 <script src="https://d3js.org/d3.v4.min.js" charset="utf-8"></script>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link type="text/css" rel="stylesheet" href="stylesheets/style.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/d3/4.1.1/d3.min.js"></script>    
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -124,95 +120,6 @@
 <p> Quel arrondissement est le plus écolo? </p>
   
 <p> Quel arrondissement mange le mieux? </p>
- 
- <div id="graph"></div>    
-        
-<script src="//cdnjs.cloudflare.com/ajax/libs/d3/4.1.1/d3.min.js"></script>    
-<script>
-!(function(){
-    "use strict"
-    
-    var width,height
-    var chartWidth, chartHeight
-    var margin
-    var svg = d3.select("#graph").append("svg")
-    var chartLayer = svg.append("g").classed("chartLayer", true)
-    
-    d3.csv("data/music.csv", cast,  main)
-    
-    function cast(d) {
-        d.value = +d.value
-        return d 
-    }
-    
-    function main(data) {
-        setSize(data)
-        drawChart(data)    
-    }
-    
-    function setSize(data) {
-        width = document.querySelector("#graph").clientWidth
-        height = document.querySelector("#graph").clientHeight
-    
-        margin = {top:40, left:0, bottom:40, right:0 }
-        
-        
-        chartWidth = width - (margin.left+margin.right)
-        chartHeight = height - (margin.top+margin.bottom)
-        
-        svg.attr("width", width).attr("height", height)
-        
-        
-        chartLayer
-            .attr("width", chartWidth)
-            .attr("height", chartHeight)
-            .attr("transform", "translate("+[margin.left, margin.top]+")")
-            
-            
-    }
-    
-    function drawChart(data) {
-        //pieチャート用のデータセットを生成する
-        var arcs = d3.pie()
-            .sort(null)
-            .value(function(d) { return d.value; })
-            (data)
-        
-        //パスジェネレーターを生成する    
-        var arc = d3.arc()
-            .outerRadius(chartHeight/2)
-            .innerRadius(chartHeight/4)
-            .padAngle(0.03)
-            .cornerRadius(8)
-            
-        var pieG = chartLayer.selectAll("g")
-            .data([data])
-            .enter()
-            .append("g")
-            .attr("transform", "translate("+[chartWidth/2, chartHeight/2]+")")
-        
-        var block = pieG.selectAll(".arc")
-            .data(arcs)
-            
-        var newBlock = block.enter().append("g").classed("arc", true)
-            
-        //円グラフ描画
-        newBlock.append("path")
-            .attr("d", arc)
-            .attr("id", function(d, i) { return "arc-" + i })
-            .attr("stroke", "gray")
-            .attr("fill", function(d,i){ return d3.interpolateCool(Math.random()) })
-        
-        //ラベル表示
-        newBlock.append("text")
-            .attr("dx", 55)
-            .attr("dy", -5)
-            .append("textPath")
-            .attr("xlink:href", function(d, i) { return "#arc-" + i; })
-            .text(function(d) { console.log(d);return d.data.name })
-    }
-}());
-</script>    
 
 <script type="text/javascript" src="js/script.js"></script>
 
