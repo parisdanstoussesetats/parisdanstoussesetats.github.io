@@ -79,4 +79,4 @@ function displayInfo(){
    document.getElementById("evenements").innerHTML = data[0].evenement
      
 })
-});
+};
