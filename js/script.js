@@ -77,7 +77,7 @@ function displayInfo(index){
    document.getElementById("quartier").innerHTML = index + 1
    document.getElementById("evenements").innerHTML = data[index].evenement
    document.getElementById("cinema").innerHTML = data[index].films
-   document.getElementById("livres").innerHTML = data[index].livres
+   document.getElementById("livres").innerHTML = data[index].livre
       
      
 })
