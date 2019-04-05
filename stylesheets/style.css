@@ -19,7 +19,8 @@ body {background-color: white;}
 
 .map__image{
     margin-left: auto;
-    margin-right: auto 
+    margin-right: auto;
+
 }
 
 .map__list{
@@ -37,7 +38,7 @@ body {background-color: white;}
 }
 
 .map_solution{
-	clear:both
+	clear:both;
 	width: 50%;
     float: left;
 }
