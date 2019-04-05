@@ -36,6 +36,15 @@ body {background-color: white;}
     fill:blueviolet;
 }
 
+.map_solution{
+	width: 50%;
+    float: left;
+}
+
+.solution__info{
+float: right;
+    width:50%;	
+}
 
 .map__list li.is-active{
     color:chartreuse;
