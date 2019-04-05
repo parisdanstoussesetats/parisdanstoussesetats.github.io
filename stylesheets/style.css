@@ -37,6 +37,7 @@ body {background-color: white;}
 }
 
 .map_solution{
+	clear:both
 	width: 50%;
     float: left;
 }
