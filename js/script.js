@@ -74,7 +74,7 @@ function displayInfo(index){
 
    console.log(data[0])
   
-   document.getElementById("quartier").innerHTML = data[index].quartier
+   document.getElementById("quartier").innerHTML = index + 1
    document.getElementById("evenements").innerHTML = data[index].evenement
    document.getElementById("cinema").innerHTML = data[index].films
    document.getElementById("livres").innerHTML = data[index].livres
