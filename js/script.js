@@ -13,13 +13,7 @@ paths.forEach(function(path){
     })
     
 }) */
-d3.csv("../data/culture.csv",function(data) {
-   
-   
-console.log(data)
-console.log(data[0])
-console.log(data[0].quartier)
-});
+
 
 
 function displayInfo(){
@@ -74,3 +68,17 @@ function colourCountries(data) {
   }
 }
 colourCountries(data1)
+
+d3.csv("../data/culture.csv",function(data) {
+   
+   
+console.log(data)
+console.log(data[0])
+console.log(data[0].quartier)
+
+
+
+function displayInfo(){
+   document.getElementById("evenements").innerHTML = data[0].evenement
+}
+});
