@@ -77,5 +77,6 @@ function displayInfo(){
    console.log(data[0].evenement)
    document.getElementById("quartier").innerHTML = data[0].quartier
    document.getElementById("evenements").innerHTML = data[0].evenement
-}
+     
+})
 });
