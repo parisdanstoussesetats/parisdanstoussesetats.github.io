@@ -75,10 +75,12 @@ d3.csv("../data/culture.csv",function(data) {
 console.log(data)
 console.log(data[0])
 console.log(data[0].quartier)
+console.log(data[0].evenement)
 
 
 
 function displayInfo(){
+   document.getElementById("quartier").innerHTML = data[0].quartier
    document.getElementById("evenements").innerHTML = data[0].evenement
 }
 });
