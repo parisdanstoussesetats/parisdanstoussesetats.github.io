@@ -18,13 +18,13 @@ body {background-color: white;}
 }
 
 .map__image{
-    width: 50%;
-    float: left;
+    margin-left: auto;
+    margin-right: auto 
 }
 
 .map__list{
     float: right;
-    width:50%;
+    width:30%;
 }
 
 .map__list .non-active {
