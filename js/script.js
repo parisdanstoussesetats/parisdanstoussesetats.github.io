@@ -70,14 +70,14 @@ colourCountries(data1)
 
 
 function displayInfo(index){
-   d3.csv("../data/culture.csv",function(data) {
+   d3.csv("../data/Culture_agg_score.csv",function(data) {
 
    console.log(data[0])
   
    document.getElementById("quartier").innerHTML = index + 1
-   document.getElementById("evenements").innerHTML = data[index].evenement
-   document.getElementById("cinema").innerHTML = data[index].films
-   document.getElementById("livres").innerHTML = data[index].livre
+   document.getElementById("evenements").innerHTML = data[index].nb_musée
+   document.getElementById("cinema").innerHTML = data[index].nb_cinema
+   document.getElementById("livres").innerHTML = data[index].nb_kiosque
       
      
 })
