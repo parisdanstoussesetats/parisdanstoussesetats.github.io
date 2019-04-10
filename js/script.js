@@ -64,6 +64,15 @@ function colourCountry(name, colour) {
     document.getElementById(name).classList.add('colour' + colour);
 }
 
+function green(name, colour) {
+    var country = document.getElementById(name);
+    document.getElementById(name).classList.add('green' + colour);
+}
+
+function yellow(name, colour) {
+    var country = document.getElementById(name);
+    document.getElementById(name).classList.add('yellow' + colour);
+}
 
 
 function colourCountries(data) {
@@ -73,7 +82,25 @@ function colourCountries(data) {
     }
   }
 }
+
+function colourGreen(data) {
+  for (var colour = 0; colour < data.length; colour++){    
+    for (var country = 0; country < data[colour].length; country++){
+      colourCountry(data[colour][country], colour + 1);
+    }
+  }
+}
+
+function colourYellow(data) {
+  for (var colour = 0; colour < data.length; colour++){    
+    for (var country = 0; country < data[colour].length; country++){
+      colourCountry(data[colour][country], colour + 1);
+    }
+  }
+}
 colourCountries(data1)
+colourGreen(data1)
+colourYellow(data1)
 
 
 
