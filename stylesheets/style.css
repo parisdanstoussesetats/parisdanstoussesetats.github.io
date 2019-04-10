@@ -71,6 +71,20 @@ float: right;
 .colour5 {fill: #44010b;}
 .colour6 {fill: #080001;}
 
+.green0 {fill: #8BC68F;}
+.green1 {fill: #62A266;}
+.green2 {fill: #3F8143;}
+.green3 {fill: #246028;}
+.green4 {fill: #0D4F11;}
+
+.yellow0 {fill: #FBF2B6}
+.yellow1 {fill: #FBF2B6}
+.yellow2 {fill: #EEDA59}
+.yellow3 {fill: #EFD739}
+.yellow4 {fill: #E4CA1F}
+
+
+
   
 polygon:hover { 
   	fill: blue;
