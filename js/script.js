@@ -30,6 +30,12 @@ function showFunction(){
     document.getElementById("map").classList.add('no_display')
 }
 
+
+function showFunction2(){
+    document.getElementById("solution_2").classList.remove('no_display')
+    document.getElementById("map_eco").classList.add('no_display')
+}
+
 function gameFunction(number) {
     if (number > 0) {
         document.getElementById("demo").classList.remove('btn-success')
@@ -48,17 +54,37 @@ function gameFunction(number) {
 
   }}
 
+function gameFunctionEco{
+       if (number > 0) {
+        document.getElementById("demo").classList.remove('btn-success')
+        document.getElementById("seemore").classList.remove('btn-info')
+        document.getElementById("demo").classList.add('btn-danger')
+        document.getElementById('seemore').innerHTML = "Voir les résultats"
+        document.getElementById("seemore").classList.add('btn-info')
+        document.getElementById("demo").innerHTML = "Perdu"
+    
+  } else {
+    document.getElementById("demo").classList.remove('btn-danger')
+    document.getElementById("demo").innerHTML = "Gagné"
+    document.getElementById("demo").classList.add('btn-success');
+    document.getElementById('seemore').innerHTML = "Voir les résultats"
+    document.getElementById("seemore").classList.add('btn-info')
+
+}
+   
+}
+
 function backtoQuizz(){
    document.getElementById("solution_1").classList.add('no_display')
    document.getElementById("map").classList.remove('no_display')
    
 }
-var data1 = [['sol1_75008', 'sol1_75001','sol1_75006','sol1_75009'],
-             ['sol1_75012', 'sol1_75007'],
+var data1 = [['sol1_75010', 'sol1_75011','sol1_75020'],
              ['sol1_75014', 'sol1_75005','sol1_75015','sol1_75003'],
-             ['sol1_75019', 'sol1_75013'],
              ['sol1_75004', 'sol1_75016', 'sol1_75017','sol1_75002','sol1_75008','sol1_75018'],
-             ['sol1_75010', 'sol1_75011','sol1_75020']]
+             ['sol1_75019', 'sol1_75013'],
+             ['sol1_75012', 'sol1_75007'],
+            ['sol1_75008', 'sol1_75001','sol1_75006','sol1_75009']]
              ;
 
 function colourCountry(name, colour) {
