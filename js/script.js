@@ -54,7 +54,7 @@ function gameFunction(number) {
 
   }}
 
-function gameFunctionEco{
+function gameFunctionEco(number){
     console.log('appel fonction')
        if (number > 0) {
         document.getElementById("demo_eco").classList.remove('btn-success')
@@ -70,6 +70,25 @@ function gameFunctionEco{
     document.getElementById("demo_eco").classList.add('btn-success');
     document.getElementById('seemore_eco').innerHTML = "Voir les résultats"
     document.getElementById("seemore_eco").classList.add('btn-info')
+
+}}
+
+function gameFunctionGour(number){
+    console.log('appel fonction')
+       if (number > 0) {
+        document.getElementById("demo_gour").classList.remove('btn-success')
+        document.getElementById("seemore_gour").classList.remove('btn-info')
+        document.getElementById("demo_gour").classList.add('btn-danger')
+        document.getElementById('seemore_gour').innerHTML = "Voir les résultats"
+        document.getElementById("seemore_gour").classList.add('btn-info')
+        document.getElementById("demo_gour").innerHTML = "Perdu"
+    
+  } else {
+    document.getElementById("demo_gour").classList.remove('btn-danger')
+    document.getElementById("demo_gour").innerHTML = "Gagné"
+    document.getElementById("demo_gour").classList.add('btn-success');
+    document.getElementById('seemore_gour').innerHTML = "Voir les résultats"
+    document.getElementById("seemore_gour").classList.add('btn-info')
 
 }}
    
