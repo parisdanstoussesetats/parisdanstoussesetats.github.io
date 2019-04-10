@@ -34,6 +34,7 @@ function gameFunction(number) {
         document.getElementById("seemore").classList.remove('btn-info')
         document.getElementById("demo").classList.add('btn-danger')
         document.getElementById('seemore').innerHTML = "Voir les résultats"
+        document.getElementById("seemore").classList.add('btn-info')
         document.getElementById("demo").innerHTML = "Perdu"
     
   } else {
