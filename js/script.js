@@ -19,6 +19,8 @@ paths.forEach(function(path){
 
 function displayName(name) {
     document.getElementById('quartier').firstChild.data = name;
+    document.getElementById('quartier2').firstChild.data = name;
+   
 } 
 
 
