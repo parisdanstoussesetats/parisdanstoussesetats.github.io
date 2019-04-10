@@ -71,9 +71,9 @@ function gameFunctionEco{
     document.getElementById('seemore_eco').innerHTML = "Voir les résultats"
     document.getElementById("seemore_eco").classList.add('btn-info')
 
-}
+}}
    
-}
+
 
 function backtoQuizz(){
    document.getElementById("solution_1").classList.add('no_display')
