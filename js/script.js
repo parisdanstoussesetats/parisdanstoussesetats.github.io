@@ -47,7 +47,7 @@ function gameFunction(number) {
 
 function backtoQuizz(){
    document.getElementById("solution_1").classList.add('no_display')
-   document.getElementbyId("map").classList.remove('no_display')
+   document.getElementById("map").classList.remove('no_display')
    
 }
 var data1 = [['sol1_75008', 'sol1_75001','sol1_75006','sol1_75009'],
