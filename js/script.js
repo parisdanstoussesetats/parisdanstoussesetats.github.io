@@ -33,6 +33,7 @@ function gameFunction(number) {
         document.getElementById("demo").classList.remove('btn-success')
         document.getElementById("seemore").classList.remove('btn-info')
         document.getElementById("demo").classList.add('btn-danger')
+        document.getElementById('seemore').innerHTML = "Voir les résultats"
         document.getElementById("demo").innerHTML = "Perdu"
     
   } else {
@@ -44,6 +45,11 @@ function gameFunction(number) {
 
   }}
 
+function backtoQuizz(){
+   document.getElementById("solution_1").classList.add('no_display')
+   document.getElementbyId("map").classList.remove('no_display')
+   
+}
 var data1 = [['sol1_75008', 'sol1_75001','sol1_75006','sol1_75009'],
              ['sol1_75012', 'sol1_75007'],
              ['sol1_75014', 'sol1_75005','sol1_75015','sol1_75003'],
