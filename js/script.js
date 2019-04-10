@@ -55,20 +55,21 @@ function gameFunction(number) {
   }}
 
 function gameFunctionEco{
+    console.log('appel fonction')
        if (number > 0) {
-        document.getElementById("demo").classList.remove('btn-success')
-        document.getElementById("seemore").classList.remove('btn-info')
-        document.getElementById("demo").classList.add('btn-danger')
-        document.getElementById('seemore').innerHTML = "Voir les résultats"
-        document.getElementById("seemore").classList.add('btn-info')
-        document.getElementById("demo").innerHTML = "Perdu"
+        document.getElementById("demo_eco").classList.remove('btn-success')
+        document.getElementById("seemore_eco").classList.remove('btn-info')
+        document.getElementById("demo_eco").classList.add('btn-danger')
+        document.getElementById('seemore_eco').innerHTML = "Voir les résultats"
+        document.getElementById("seemore_eco").classList.add('btn-info')
+        document.getElementById("demo_eco").innerHTML = "Perdu"
     
   } else {
-    document.getElementById("demo").classList.remove('btn-danger')
-    document.getElementById("demo").innerHTML = "Gagné"
-    document.getElementById("demo").classList.add('btn-success');
-    document.getElementById('seemore').innerHTML = "Voir les résultats"
-    document.getElementById("seemore").classList.add('btn-info')
+    document.getElementById("demo_eco").classList.remove('btn-danger')
+    document.getElementById("demo_eco").innerHTML = "Gagné"
+    document.getElementById("demo_eco").classList.add('btn-success');
+    document.getElementById('seemore_eco').innerHTML = "Voir les résultats"
+    document.getElementById("seemore_eco").classList.add('btn-info')
 
 }
    
