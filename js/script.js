@@ -30,10 +30,14 @@ function showFunction(){
     document.getElementById("map").classList.add('no_display')
 }
 
-
-function showFunction2(){
+function showFunctionEco(){
     document.getElementById("solution_2").classList.remove('no_display')
     document.getElementById("map_eco").classList.add('no_display')
+}
+
+function showFunctionGour(){
+    document.getElementById("solution_3").classList.remove('no_display')
+    document.getElementById("map_gour").classList.add('no_display')
 }
 
 function gameFunction(number) {
