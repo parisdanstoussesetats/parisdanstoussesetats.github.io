@@ -99,12 +99,26 @@ function backtoQuizz(){
    document.getElementById("map").classList.remove('no_display')
    
 }
-var data1 = [['sol1_75010', 'sol1_75011','sol1_75020'],
+var data_cult = [['sol1_75010', 'sol1_75011','sol1_75020'],
              ['sol1_75014', 'sol1_75005','sol1_75015','sol1_75003'],
              ['sol1_75004', 'sol1_75016', 'sol1_75017','sol1_75002','sol1_75008','sol1_75018'],
              ['sol1_75019', 'sol1_75013'],
              ['sol1_75012', 'sol1_75007'],
             ['sol1_75008', 'sol1_75001','sol1_75006','sol1_75009']]
+             ;
+
+var data_gour =  [['sol2_75009', 'sol2_75010','sol2_75012','sol2_75013','sol2_75019'],
+             ['sol2_75008', 'sol2_75020','sol2_75003','sol2_75001'],
+             ['sol2_75002', 'sol2_75015', 'sol2_75016','sol2_75018'],
+             ['sol2_75014', 'sol2_75011','sol2_75007','sol2_75004'],
+             ['sol2_75005', 'sol2_75006','sol2_75017']]
+             ;
+              
+var data_eco = [['sol3_75001', 'sol3_75002','sol3_75010','sol3_75016'],
+             ['sol3_75004', 'sol3_75008','sol3_75009','sol3_75014'],
+             ['sol3_75006', 'sol3_75011', 'sol3_75018','sol3_75019'],
+             ['sol3_75020', 'sol3_75005','sol3_75003','sol3_75017'],
+             ['sol3_75015', 'sol3_75007','sol3_75012','sol3_75013']]
              ;
 
 function colourCountry(name, colour) {
@@ -146,9 +160,9 @@ function colourYellow(data) {
     }
   }
 }
-colourCountries(data1)
-colourGreen(data1)
-colourYellow(data1)
+colourCountries(data_cult)
+colourGreen(data_eco)
+colourYellow(data_gour)
 
 
 
