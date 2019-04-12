@@ -221,7 +221,7 @@ function displayInfoEco(index){
   console.log(data[0].taux_NO2)
    document.getElementById("quartier2").innerHTML = index + 1
    document.getElementById("no2").innerHTML = data[index].taux_NO2
-   document.getElementById("dechet").innerHTML = data[index].ratio_déchet
+   document.getElementById("dechet").innerHTML = data[index].ratio_dechet
    document.getElementById("espace").innerHTML = data[index].ratio_parc
    document.getElementById("bio").innerHTML = data[index].pour_mag_bio
       
