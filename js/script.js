@@ -214,15 +214,15 @@ function displayInfo(index){
 })
 };
 
-function displayInfo_eco(index){
+function displayInfoEco(index){
    d3.csv("../data/ecolo.csv",function(data) {
 
    console.log(data[0])
   
    document.getElementById("quartier").innerHTML = index + 1
-   document.getElementById("evenements").innerHTML = data[index].nb_musée
-   document.getElementById("cinema").innerHTML = data[index].nb_cinema
-   document.getElementById("livres").innerHTML = data[index].nb_kiosque
+   document.getElementById("evenements").innerHTML = data[index].taux_NO2
+   document.getElementById("cinema").innerHTML = data[index].ratio_déchet
+   document.getElementById("livres").innerHTML = data[index].ratio_parc
       
      
 })
@@ -235,9 +235,9 @@ function displayInfo_gour(index){
    console.log(data[0])
   
    document.getElementById("quartier").innerHTML = index + 1
-   document.getElementById("evenements").innerHTML = data[index].nb_musée
-   document.getElementById("cinema").innerHTML = data[index].nb_cinema
-   document.getElementById("livres").innerHTML = data[index].nb_kiosque
+   document.getElementById("evenements").innerHTML = data[index].nb_restau_etoile
+   document.getElementById("cinema").innerHTML = data[index].nb_fastfood
+
       
      
 })
