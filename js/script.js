@@ -210,8 +210,11 @@ function displayInfo(index){
    document.getElementById("quartier").innerHTML = index + 1
    document.getElementById("musee").innerHTML = data[index].nb_musée
    document.getElementById("cinema").innerHTML = data[index].nb_cinema
-   document.getElementById("livres").innerHTML = data[index].nb_kiosque
+   document.getElementById("kiosque").innerHTML = data[index].nb_kiosque
    document.getElementById("range_musee").value = data[index].nb_musée
+   document.getElementById("range_cinema").value = data[index].nb_cinema
+   document.getElementById("range_kiosque").value = data[index].nb_cinema
+      
       
      
 })
