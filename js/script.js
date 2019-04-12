@@ -231,6 +231,10 @@ function displayInfoEco(index){
    document.getElementById("dechet").innerHTML = data[index].ratio_dechet
    document.getElementById("espace").innerHTML = data[index].ratio_parcs
    document.getElementById("bio").innerHTML = data[index].pour_mag_bio
+   document.getElementById("range_no2").value = data[index].taux_NO2
+   document.getElementById("range_dechet").value = data[index].ratio_dechet
+   document.getElementById("range_parcs").value = data[index].ratio_parcs
+   document.getElementById("range_bio").value = data[index].pour_mag_bio
       
      
 })
