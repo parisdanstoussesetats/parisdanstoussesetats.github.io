@@ -215,7 +215,7 @@ function displayInfo(index){
    document.getElementById("kiosque").innerHTML = data[index].nb_kiosque
    document.getElementById("range_musee").value = data[index].nb_musée
    document.getElementById("range_cinema").value = data[index].nb_cinema
-   document.getElementById("range_kiosque").value = data[index].nb_cinema
+   document.getElementById("range_kiosque").value = data[index].nb_kiosque
       
       
      
