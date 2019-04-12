@@ -128,6 +128,18 @@ function backtoQuizz(){
    document.getElementById("map").classList.remove('no_display')
    
 }
+   
+function backtoQuizzEco(){
+   document.getElementById("solution_2").classList.add('no_display')
+   document.getElementById("map_eco").classList.remove('no_display')
+   
+}
+   
+function backtoQuizzGour(){
+   document.getElementById("solution_3").classList.add('no_display')
+   document.getElementById("map_gour").classList.remove('no_display')
+   
+}
 var data_cult = [['sol1_75010', 'sol1_75011','sol1_75020'],
              ['sol1_75014', 'sol1_75005','sol1_75015','sol1_75003'],
              ['sol1_75004', 'sol1_75016', 'sol1_75017','sol1_75002','sol1_75008','sol1_75018'],
