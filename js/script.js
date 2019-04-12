@@ -208,13 +208,15 @@ function displayInfo(index){
    console.log(data[0])
   
    document.getElementById("quartier").innerHTML = index + 1
-   document.getElementById("evenements").innerHTML = data[index].nb_musée
+   document.getElementById("musee").innerHTML = data[index].nb_musée
    document.getElementById("cinema").innerHTML = data[index].nb_cinema
    document.getElementById("livres").innerHTML = data[index].nb_kiosque
+   document.getElementById("range_musee").value = data[index].nb_musée
       
      
 })
 };
+
 
 function displayInfoEco(index){
    d3.csv("../data/ecolo.csv",function(data) {
