@@ -20,6 +20,8 @@ paths.forEach(function(path){
 function displayName(name) {
     document.getElementById('quartier').firstChild.data = name;
     document.getElementById('quartier2').firstChild.data = name;
+   document.getElementById('quartier3').firstChild.data = name;
+   document.getElementById('quartier4').firstChild.data = name;
    
 } 
 
@@ -222,7 +224,7 @@ function displayInfoEco(index){
    document.getElementById("quartier2").innerHTML = index + 1
    document.getElementById("no2").innerHTML = data[index].taux_NO2
    document.getElementById("dechet").innerHTML = data[index].ratio_dechet
-   document.getElementById("espace").innerHTML = data[index].ratio_parc
+   document.getElementById("espace").innerHTML = data[index].ratio_parcs
    document.getElementById("bio").innerHTML = data[index].pour_mag_bio
       
      
