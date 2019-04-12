@@ -22,6 +22,8 @@ function displayName(name) {
     document.getElementById('quartier2').firstChild.data = name;
    document.getElementById('quartier3').firstChild.data = name;
    document.getElementById('quartier4').firstChild.data = name;
+   document.getElementById('quartier5').firstChild.data = name;
+   
    
 } 
 
