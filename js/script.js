@@ -152,7 +152,7 @@ function colourCountries(data) {
 function colourGreen(data) {
   for (var colour = 0; colour < data.length; colour++){    
     for (var country = 0; country < data[colour].length; country++){
-      colourCountry(data[colour][country], colour + 1);
+      green(data[colour][country], colour + 1);
     }
   }
 }
@@ -160,7 +160,7 @@ function colourGreen(data) {
 function colourYellow(data) {
   for (var colour = 0; colour < data.length; colour++){    
     for (var country = 0; country < data[colour].length; country++){
-      colourCountry(data[colour][country], colour + 1);
+      yellow(data[colour][country], colour + 1);
     }
   }
 }
