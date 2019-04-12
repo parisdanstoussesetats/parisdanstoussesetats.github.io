@@ -220,3 +220,32 @@ function displayInfo(index){
      
 })
 };
+
+function displayInfo_eco(index){
+   d3.csv("../data/ecolo.csv",function(data) {
+
+   console.log(data[0])
+  
+   document.getElementById("quartier").innerHTML = index + 1
+   document.getElementById("evenements").innerHTML = data[index].nb_musée
+   document.getElementById("cinema").innerHTML = data[index].nb_cinema
+   document.getElementById("livres").innerHTML = data[index].nb_kiosque
+      
+     
+})
+};
+
+
+function displayInfo_gour(index){
+   d3.csv("../data/gourmet.csv",function(data) {
+
+   console.log(data[0])
+  
+   document.getElementById("quartier").innerHTML = index + 1
+   document.getElementById("evenements").innerHTML = data[index].nb_musée
+   document.getElementById("cinema").innerHTML = data[index].nb_cinema
+   document.getElementById("livres").innerHTML = data[index].nb_kiosque
+      
+     
+})
+};
