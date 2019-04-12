@@ -120,7 +120,7 @@ function gameFunctionGour(number){
     document.getElementById("demo_gour").classList.add('btn-success');
     document.getElementById('seemore_gour').innerHTML = "Voir les résultats"
     document.getElementById("seemore_gour").classList.add('btn-info')
-     }}
+     }}}
 
 
 function backtoQuizz(){
