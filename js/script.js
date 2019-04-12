@@ -218,11 +218,12 @@ function displayInfoEco(index){
    d3.csv("../data/ecolo.csv",function(data) {
 
    console.log(data[0])
-  
-   document.getElementById("quartier").innerHTML = index + 1
-   document.getElementById("evenements").innerHTML = data[index].taux_NO2
-   document.getElementById("cinema").innerHTML = data[index].ratio_déchet
-   document.getElementById("livres").innerHTML = data[index].ratio_parc
+  console.log(data[0].taux_NO2)
+   document.getElementById("quartier2").innerHTML = index + 1
+   document.getElementById("no2").innerHTML = data[index].taux_NO2
+   document.getElementById("dechet").innerHTML = data[index].ratio_déchet
+   document.getElementById("espace").innerHTML = data[index].ratio_parc
+   document.getElementById("bio").innerHTML = data[index].pour_mag_bio
       
      
 })
@@ -234,9 +235,9 @@ function displayInfo_gour(index){
 
    console.log(data[0])
   
-   document.getElementById("quartier").innerHTML = index + 1
-   document.getElementById("evenements").innerHTML = data[index].nb_restau_etoile
-   document.getElementById("cinema").innerHTML = data[index].nb_fastfood
+   document.getElementById("quartier3").innerHTML = index + 1
+   document.getElementById("etoile").innerHTML = data[index].nb_restau_etoile
+   document.getElementById("fastfood").innerHTML = data[index].nb_fastfood
 
       
      
