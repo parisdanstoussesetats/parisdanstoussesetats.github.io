@@ -249,6 +249,8 @@ function displayInfo_gour(index){
    document.getElementById("quartier3").innerHTML = index + 1
    document.getElementById("etoile").innerHTML = data[index].nb_restau_etoile
    document.getElementById("fastfood").innerHTML = data[index].nb_fastfood
+   document.getElementById("range_etoile").value = data[index].nb_restau_etoile
+   document.getElementById("range_fastfood").value = data[index].nb_fastfood
 
       
      
