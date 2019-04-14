@@ -17,12 +17,19 @@ body {background-color: white;}
   	color: white;
 }
 
+.image_wrapper{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .map__image, .map__image_eco, .map__image_grou{
     position: relative;
     margin-left: auto;
     margin-right: auto;
 
 }
+
 
 .map__list{
     width: 20vw;
