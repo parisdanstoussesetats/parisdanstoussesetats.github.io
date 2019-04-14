@@ -1,7 +1,7 @@
 body {background-color: white;}
 
 .no_display {
-    display:none;
+    display:none !important;
 }
 .red {
     color: rgb(255, 71, 47);
@@ -17,15 +17,17 @@ body {background-color: white;}
   	color: white;
 }
 
-.map__image{
+.map__image, .map__image_eco, .map__image_grou{
+    position: relative;
     margin-left: auto;
     margin-right: auto;
 
 }
 
 .map__list{
-    float: right;
-    width:30%;
+    width: 20vw;
+    display: inline-flex;
+    flex-direction: row;
 }
 
 .map__list .non-active {
@@ -37,15 +39,8 @@ body {background-color: white;}
     fill:blueviolet;
 }
 
-.map_solution{
-	clear:both;
-	width: 50%;
-    float: left;
-}
-
-.solution__info{
-float: right;
-    width:50%;	
+.btn-secondary {
+    width:100%;
 }
 
 .map__list li.is-active{
@@ -89,4 +84,45 @@ float: right;
 polygon:hover { 
   	fill: blue;
       transition: fill 0.3s;
-	}
+    }
+    
+
+
+.map_wrapper {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.solution{
+    display: flex;
+    flex-direction: column;
+    width:40vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.map, .map_eco, .map_gour{
+    padding : 6rem;
+}
+
+.text-align{
+
+    margin-bottom: 3rem;
+}
+
+.solution_chart_1 {
+    display:flex;
+    flex-direction: row;
+    width:60vw;
+}
+
+
+#quartier, #quartier6, #quartier3{
+    position: absolute;
+    top:0;
+    right:0;
+}
+
