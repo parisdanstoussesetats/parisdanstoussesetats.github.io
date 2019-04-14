@@ -72,13 +72,13 @@ body {background-color: white;}
     transition: fill 0.3s;
 }
 
-.colour0 {fill: #b9b9b9;}
-.colour1 {fill: #ffa4a9;}
-.colour2 {fill: #cc6674;}
-.colour3 {fill: #993341;}
-.colour4 {fill: #66000e;}
-.colour5 {fill: #44010b;}
-.colour6 {fill: #080001;}
+.colour0 {fill: #F9EBEA;}
+.colour1 {fill: #F2D7D5;}
+.colour2 {fill: #E6B0AA;}
+.colour3 {fill: #D98880;}
+.colour4 {fill: #CD6155;}
+.colour5 {fill: #C0392B;}
+.colour6 {fill: #A93226;}
 
 .green1 {fill: #8BC68F;}
 .green2 {fill: #62A266;}
