@@ -83,23 +83,23 @@ body {background-color: white;}
 .colour5 {fill: #C0392B;}
 .colour6 {fill: #A93226;}
 
-.green1 {fill: #8BC68F;}
-.green2 {fill: #62A266;}
-.green3 {fill: #3F8143;}
-.green4 {fill: #246028;}
-.green5 {fill: #0D4F11;}
+.green1 {fill: #D4EFDF;}
+.green2 {fill: #E9F7EF;}
+.green3 {fill: #A9DFBF;}
+.green4 {fill: #7DCEA0;}
+.green5 {fill: #52BE80;}
 
-.yellow1 {fill: #FBF2B6}
-.yellow2 {fill: #FBF2B6}
-.yellow3 {fill: #EEDA59}
-.yellow4 {fill: #EFD739}
-.yellow5 {fill: #E4CA1F}
+.yellow1 {fill: #FDEBD0}
+.yellow2 {fill: #FAD7A0}
+.yellow3 {fill: #F8C471}
+.yellow4 {fill: #F5B041}
+.yellow5 {fill: #F39C12}
 
 
 
   
 polygon:hover { 
-  	fill: blue;
+  	fill: #626567;
       transition: fill 0.3s;
     }
     
