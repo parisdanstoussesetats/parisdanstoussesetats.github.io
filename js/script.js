@@ -63,7 +63,7 @@ function gameFunction(number) {
 
     } else {
       document.getElementById("demo").classList.remove('btn-danger')
-      document.getElementById("demo").innerHTML = "Gagné"
+      document.getElementById("demo").innerHTML = "Presque! "
       document.getElementById("demo").classList.add('btn-success');
       document.getElementById('seemore').innerHTML = "Voir les résultats"
       document.getElementById("seemore").classList.add('btn-info')
