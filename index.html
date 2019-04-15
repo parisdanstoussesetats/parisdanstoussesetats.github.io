@@ -3,7 +3,7 @@
 
 <head>
 
-
+    <meta charset="UTF-8">
 
     <link rel="icon" type="image/png" href="logo.png" />
     <script src="https://d3js.org/d3.v4.min.js" charset="utf-8"></script>
@@ -31,40 +31,57 @@
             <h1>Paris dans tous ses états</h1>
             <h3 class='text-center'> Culture, Ecologie, Gastronomie </h3>
         </div>
-    </div class="intro">
-        <div class = 'text-intro'>
-            Connais-tu vraiment Paris, Paris dans tous ses états ? Pour le savoir on te propose un jeu !
- 
-            A travers notre bataille des arrondissements, tu pourras tester tes connaissances et explorer Paris.
-            En bonus, tu découvriras quels sont les meilleurs arrondissements selon tes goûts. 
-
-            La culture, l'environnement et la gastronomie sont les thèmes que nous avons choisis.
-            Forts de toutes les données dont nous disposons nous nous sommes intéressés à ces différents aspects. Notre but : départager les arrondissements !
-             
-            Grâce à notre quiz interactif tu pourras choisir l’arrondissement qui correspond le mieux à ta personnalité et à tes goûts. Tu auras ainsi la possibilité de sélectionner tes propres critères et savoir quel arrondissement l’emporte !
-             
-             
-            Pour jouer c'est très simple :
-
-            Clique sur l'arrondissement qui te semble être la bonne réponse !
-            Après avoir cliqué tu peux voir les résultats, et en découvrir davantage sur ton arrondissement (nos faits surprenants vont vous étonner)
-            A la fin de la partie, tu connaîtras tout !
-             
-             
-            C'est parti !
-
-
-        </div>
-
 
 
     </div>
-    
-    </div>
+
+
+
 
 
 
     <div class="map_wrapper">
+
+        <div class="intro">
+            <div class='text-intro'>
+
+                <h2>Connais-tu vraiment Paris, Paris dans tous ses états ? Pour le savoir on te propose un jeu !</h2>
+
+                <p>
+                    A travers notre bataille des arrondissements, tu pourras tester tes connaissances et explorer Paris.
+                    En bonus, tu découvriras quels sont les meilleurs arrondissements selon tes goûts.
+
+                    La culture, l'environnement et la gastronomie sont les thèmes que nous avons choisis.
+                    Forts de toutes les données dont nous disposons nous nous sommes intéressés à ces différents
+                    aspects.
+                    Notre but : départager les arrondissements !
+
+                    Grâce à notre quiz interactif tu pourras choisir l’arrondissement qui correspond le mieux à ta
+                    personnalité et à tes goûts. Tu auras ainsi la possibilité de sélectionner tes propres critères et
+                    savoir quel arrondissement l’emporte !
+                </p>
+
+                <h5>
+                    Pour jouer c'est très simple :
+
+                </h5>
+                <p>
+
+                    Clique sur l'arrondissement qui te semble être la bonne réponse !
+                    Après avoir cliqué tu peux voir les résultats, et en découvrir davantage sur ton arrondissement (nos
+                    faits surprenants vont vous étonner)
+                    A la fin de la partie, tu connaîtras tout !
+                </p>
+
+                <b> C'est parti !
+                </b>
+
+
+            </div>
+
+
+
+        </div>
 
 
 
@@ -143,7 +160,7 @@
 
         <div id="solution_1" class="solution no_display">
             <h3 class='text-align'> Où aller pour se cultiver ? </h3>
-            <div class='map_solution' id='map_solution' style='float:right; clear: both' >
+            <div class='map_solution' id='map_solution' style='float:right; clear: both'>
 
 
 
@@ -218,42 +235,66 @@
                 <meter id="range_cinema" min="0" max="8">2 out of 10</meter><br><br>
             </div>
 
-             <div class='score_info'>
-                Le score a été calculé arbitrairement en se basant sur le nombre de musée, cinémas et kiosque dans un arrondissement. Avec un poids supérieur pour pour les cinémas et inférieur pour les kiosque. Il s’agit ici du nombre de fauteuils de cinéma
-
-                
-                
+            <div class='score_info'>
+                Le score a été calculé arbitrairement en se basant sur le nombre de musée, cinémas et kiosque dans un
+                arrondissement. Avec un poids supérieur pour pour les cinémas et inférieur pour les kiosque. Il s’agit
+                ici du nombre de fauteuils de cinéma
             </div>
-             
-
-
-
-                <button type="button" class='btn btn-secondary' id='seemore' onclick="backtoQuizz()"> Retour au quizz
-                </button>
-
-            </div>
-            <br>
 
             <div class="solution_chart">
                 <canvas id="histo3"></canvas>
                 <div class="chart_description">
                     Si tu aimes la musique et les concerts, tu trouveras définitivement ton bonheur à Paris, mais pas
-                    forcément partout ! Tu veux du jazz va dans le 1er! Du rock ? Va dans le 12eme. Quelque chose de 
+                    forcément partout ! Tu veux du jazz va dans le 1er! Du rock ? Va dans le 12eme. Quelque chose de
                     plus eclectique ? Le 19eme est fait pour toi !
 
                 </div>
-                
-                 <div class="lesaviezvous">
-                    Le monument le plus visité de Paris est la cathédral Notre Dame de Paris avec ses 14 millions de visiteurs par an. 
-                    Le Louvre, pas loin derrière avec 11 millions de visiteurs par an, est le musée le plus populaire au monde : il détient 460,00 oeuvres, dont seulement 35,000 sont montrés au public. Si tu ne trouves pas ton bonheur au Louvre ou à la cathédrale tu le trouveras surement dans l’un des 1,803 monument ou 173 musées qu’abrite la ville des Lumières. Paris est également championne du monde des bibliothèques avec pas moins de 830 à ce jour !
 
+                <div class="lesaviezvous">
+                    <div class="box">
+                        <i class="fas fa-quote-left fa2"></i>
+                        <div class="text"><i class="fas fa-quote-right fa1"></i>
+                            <div>
+                                <h3>Le saviez-vous ?</h3>
+                                <p> Le monument le plus visité de Paris est la cathédral Notre Dame de Paris avec ses 14
+                                    millions de
+                                    visiteurs par an.
+                                    Le Louvre, pas loin derrière avec 11 millions de visiteurs par an, est le musée le
+                                    plus
+                                    populaire au
+                                    monde : il détient 460,00 oeuvres, dont seulement 35,000 sont montrés au public. Si
+                                    tu
+                                    ne trouves
+                                    pas
+                                    ton bonheur au Louvre ou à la cathédrale tu le trouveras surement dans l’un des
+                                    1,803
+                                    monument ou
+                                    173
+                                    musées qu’abrite la ville des Lumières. Paris est également championne du monde des
+                                    bibliothèques
+                                    avec
+                                    pas moins de 830 à ce jour !
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                
+
+
+
             </div>
 
 
+            <button type="button" class='btn btn-secondary' id='seemore' onclick="backtoQuizz()"> Retour au quizz
+            </button>
 
         </div>
+        <br>
+
+
+
+
+
 
 
 
@@ -418,40 +459,55 @@
 
 
             <div class="solution_chart">
-                 <div class="chart_description">
-                    Pour chaque arrondissement, le score “ écolo ” a été calculé en combinant des données comme le taux de pollution de l’air, 
-                    la superficie en terme d’espaces verts, le tonnages des déchets recyclables récoltés mais aussi le nombre de magasins bios
+                <div class="chart_description">
+                    Pour chaque arrondissement, le score “ écolo ” a été calculé en combinant des données comme le taux
+                    de
+                    pollution de l’air,
+                    la superficie en terme d’espaces verts, le tonnages des déchets recyclables récoltés mais aussi le
+                    nombre de magasins bios
 
 
 
                 </div>
-                
-                
+
+
                 <canvas id="scatter"></canvas>
                 <div class="chart_description">
-                    Selon toi, est-ce que la végétation des espaces verts permettent d’améliorer la qualité de l’air ?  
-                    La réponse est oui, il y a une tendance pour que les espaces verts limitent le taux de NO2 dans l’air, 
-                    l’un des principaux polluants dans les villes. Regarde où se situe ton arrondissement! 
+                    Selon toi, est-ce que la végétation des espaces verts permettent d’améliorer la qualité de l’air ?
+                    La réponse est oui, il y a une tendance pour que les espaces verts limitent le taux de NO2 dans
+                    l’air,
+                    l’un des principaux polluants dans les villes. Regarde où se situe ton arrondissement!
 
 
                 </div>
-                
+
                 <canvas id="histo1"></canvas>
                 <div class="chart_description">
-                    Est-ce que ton arrondissement produit beaucoup de déchets et fait bien le tri ? 
+                    Est-ce que ton arrondissement produit beaucoup de déchets et fait bien le tri ?
 
                 </div>
-                
-                 <div class="lesaviezvous"> 
-                    Le saviez-vous ? Paris et l’environnement c’est :
-                     - Près de 500 000 arbres plantés et 450 parcs et jardins dans Paris, étalés sur 4,8km², 
-                     soit l’équivalent d’un peu moins de 700 terrains de foot
-                     - Vivre à Paris lors d’un pic de pollution, c’est comme respirer la fumée de huit cigarettes 
-                     dans une pièce de 20 mètres carrés.
 
 
+                <div class="lesaviezvous">
+                    <div class="box">
+                        <i class="fas fa-quote-left fa2"></i>
+                        <div class="text"><i class="fas fa-quote-right fa1"></i>
+                            <div>
+                                <h3>Le saviez-vous ?</h3>
+                                <p> Le saviez-vous ? Paris et l’environnement c’est :
+                                    - Près de 500 000 arbres plantés et 450 parcs et jardins dans Paris, étalés sur
+                                    4,8km²,
+                                    soit l’équivalent d’un peu moins de 700 terrains de foot
+                                    - Vivre à Paris lors d’un pic de pollution, c’est comme respirer la fumée de huit
+                                    cigarettes
+                                    dans une pièce de 20 mètres carrés.
 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
 
             </div>
 
@@ -625,7 +681,25 @@
                     iussus est, necessitati, si speravit aliquid, pueritiae. Ceteris non modo nihil ignoscendum, sed
                     etiam acriter est resistendum.s
                 </div>
+
+                <div class="lesaviezvous">
+                    <div class="box">
+                        <i class="fas fa-quote-left fa2"></i>
+                        <div class="text"><i class="fas fa-quote-right fa1"></i>
+                            <div>
+                                <h3>Le saviez-vous ?</h3>
+                                <p> Le saviez-vous ? 4 arrondissements chics de l'ouest parisien regroupent à eux seuls
+                                    60%
+                                    des restaurants Ètoilés !
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+
+
 
 
 
@@ -660,8 +734,9 @@
         <div>
 
             <h4><i class="fas fa-tree"></i> Sources</h4>
-            <a href="https://opendata.paris.fr"> opendata.paris.fr</a>
-            <a href="https://www.airparif.asso.fr/en/telechargement/telechargement-station"> airparif.asso.fr</a>
+            <p> <a href="https://opendata.paris.fr"> opendata.paris.fr</a></p>
+            <p> <a href="https://www.airparif.asso.fr/en/telechargement/telechargement-station"> airparif.asso.fr</a>
+            </p>
 
 
         </div>
