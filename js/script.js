@@ -19,10 +19,7 @@ paths.forEach(function(path){
 
 function displayName(name) {
   document.getElementById('quartier').firstChild.data = name;
-  document.getElementById('quartier2').firstChild.data = name;
   document.getElementById('quartier3').firstChild.data = name;
-  document.getElementById('quartier4').firstChild.data = name;
-  document.getElementById('quartier5').firstChild.data = name;
   document.getElementById('quartier6').firstChild.data = name;
 
 }
@@ -220,7 +217,7 @@ function displayInfo(index) {
 
     console.log(data[0])
 
-    document.getElementById("quartier").innerHTML = index + 1
+    document.getElementById("quartier2").innerHTML = data[index].quartier
     document.getElementById("musee").innerHTML = data[index].nb_musée
     document.getElementById("cinema").innerHTML = data[index].nb_cinema
     document.getElementById("kiosque").innerHTML = data[index].nb_kiosque
