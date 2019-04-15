@@ -313,6 +313,124 @@ const autre = [1, 0, 4, 0, 1, 1, 1, 1, 0, 12, 23, 2, 10, 12, 10, 0, 1, 15, 14, 1
 //charts culture
 
 
+//charts gastro
+
+
+
+const dataun = [{
+  label: "75003",
+  x: 20.98,
+  y: 0
+},
+{
+  label: "75009",
+  x: 102.51,
+  y: 26.55
+},
+{
+  label: "75010",
+  x: 88.06,
+  y: 8.85
+},
+{
+  label: "75012",
+  x: 51.60,
+  y: 17.70
+},
+{
+  label: "75013",
+  x: 45.75,
+  y: 0
+},
+{
+  label: "75015",
+  x: 54.70,
+  y: 26.55
+},
+{
+  label: "75018",
+  x: 71.21,
+  y: 26.55
+
+},
+{
+  label: "75019",
+  x: 46.78,
+  y: 0
+
+},
+{
+  label: "75020",
+  x: 38.87,
+  y: 0
+
+}];
+const datadeux = [{
+  label: "75011",
+  x: 65.36,
+  y: 35.40
+},
+{
+  label: "75014",
+  x: 33.71,
+  y: 17.70
+},
+{
+  label: "75017",
+  x: 57.79,
+  y: 35.40
+}
+];
+
+const datatrois = [{
+  label: "75002",
+  x: 46.78,
+  y: 70.80
+},
+{
+  label: "75004",
+  x: 18.58,
+  y: 26.55
+},
+{
+  label: "75005",
+  x: 48.16,
+  y: 53.10
+}
+];
+
+const dataquatre = [{
+  label: "75001",
+  x: 40.94,
+  y: 106.19
+},
+{
+  label: "75006",
+  x: 29.24,
+  y: 61.95
+},
+{
+  label: "75007",
+  x: 13.42,
+  y: 123.89
+},
+{
+  label: "75008",
+  x: 89.78,
+  y: 247.79
+},
+{
+  label: "75016",
+  x: 35.78,
+  y: 115.04
+}
+];
+
+
+
+//charts gastro
+
+
 
 //---- VARS -->
 
@@ -455,6 +573,107 @@ var optionsHistoDechets = {
     ]
   }
 }
+
+
+var optionsFastfood = {
+  responsive: true,
+  maintainAspectRatio: false,
+  legend: {
+    position: 'right'
+  },
+  title: {
+    display: true,
+    text: 'Restaurant étoilés et Fast Food: Un marbré insipide?',
+    fontSize: 20,
+    fontFamily: 'Arial'
+  },
+  scales: {
+    xAxes:
+      [{
+        title: "Titre",
+        gridLines: {
+          display: false
+        },
+        scaleLabel: {
+          display: true,
+          labelString: 'Part des fast food ‰',
+          labelFontWeight: "bold"
+        }
+      }],
+
+    yAxes: [
+      {
+        id: "restaurants_",
+        gridLines: {
+          display: false
+        },
+        ticks: {
+          beginAtZero: true
+        },
+        scaleLabel: {
+          display: true,
+          labelString: 'Part des restaurant étoilés ‰'
+        }
+      }]
+  },
+  tooltips: {
+    callbacks: {
+      label: function (tooltipItem, data) {
+        var serie = tooltipItem.datasetIndex;//3;//
+        var label = data.labels[serie][tooltipItem.index];
+        return label + '|   Étoilés: ' + tooltipItem.yLabel + ',  Fast-Food: ' + tooltipItem.xLabel;
+      }
+    }
+  }
+};
+
+
+//ctx fast food
+
+var ctxFastfood = document.getElementById('fastfoodchart').getContext('2d')
+window.myChartFF = new Chart(ctxFastfood, {
+  type: 'scatter',
+  data: {
+    labels: [["75001", "75006", "75007", "75008", "75016"], ["75002", "75004", "75005"], ["75011", "75014", "75017"], ["75003", "75009", "75010", "75012", "75013", "75015", "75018", "75019", "75020"]],
+    datasets: [{
+      label: '++ Ratio > 2 | 2 fois plus de restaurants étoilés!',
+      data: dataquatre,
+      borderColor: '#25518a',  //#1d81a2         
+      backgroundColor: '#25518a',//'#003f76'ou bien transparent
+      showLine: false,
+      ids_arr: ["75001", "75006", "75007", "75008", "750016"],
+      radius: [7.19, 6.24, 20.47, 7.52, 8.43]
+    },
+    {
+      label: '+ Ratio > 1 | Plus de restaurants étoilés!',
+      data: datatrois,
+      borderColor: '#00a1fa',
+      backgroundColor: '#00a1fa',
+      showLine: false,
+      ids_arr: ["75002", "75004", "75005"],
+      radius: [5.03, 4.86, 4.21]
+    },
+    {
+      label: '- Ratio < 1 | Plus de restauration rapide!',
+      data: datadeux,
+      borderColor: '#FF483A',
+      backgroundColor: '#FF483A',
+      showLine: false,
+      ids_arr: ["75011", "75014", "75017"],
+      radius: [3.8, 3.05, 3.23]
+    },
+    {
+      label: '-- Ratio < 0.5 | 2 fois plus de restauration rapide!',
+      data: dataun,
+      borderColor: '#B23229',
+      backgroundColor: '#B23229', //ou bien transparent
+      showLine: false,
+      ids_arr: ["75003", "75009", "750010", "750012", "750013", "75015", "75018", "75019", "75020"],
+      radius: [2, 2.52, 2.20, 2.69, 2, 2.97, 2.75, 2, 2]
+    }]
+  },
+  options: optionsFastfood
+});
 
 
 //Ctx Histo Musique
