@@ -240,7 +240,7 @@ function displayInfoEco(index) {
     console.log(index)
     console.log(data[0])
     console.log(data[0].taux_NO2)
-    document.getElementById("quartier2").innerHTML = index + 1
+    document.getElementById("quartier4").innerHTML = data[index].quartier
     document.getElementById("no2").innerHTML = data[index].taux_NO2
     document.getElementById("dechet").innerHTML = data[index].ratio_dechet
     document.getElementById("espace").innerHTML = data[index].ratio_parcs
@@ -260,7 +260,7 @@ function displayInfo_gour(index) {
 
     console.log(data[0])
 
-    document.getElementById("quartier3").innerHTML = index + 1
+    document.getElementById("quartier5").innerHTML = data[index].quartier
     document.getElementById("etoile").innerHTML = data[index].nb_restau_etoile
     document.getElementById("restau").innerHTML = data[index].nb_restau
     document.getElementById("fastfood").innerHTML = data[index].nb_fastfood
