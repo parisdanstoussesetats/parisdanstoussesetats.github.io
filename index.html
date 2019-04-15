@@ -23,18 +23,17 @@
 </head>
 
 <body>
-    
-    <h1 div='title' class='text-center'>Paris dans tous ses états</h1>
-    <h3 class='text-center'> Culture, Ecologie, Gastronomie
-    <p>
-    <img src="image/cover_night.jpg" alt="Cover Picture" style="width:100%;" title="La ville Lumière :)"/>
-    </p>
-    </h3>
-    
-    
-    
-    
-    
+
+
+    <div class="header">
+        <img src="image/cover_night.jpg" alt="Cover Picture" style="width:100%;" title="La ville Lumière :)" />
+        <div class='text-header'>
+            <h1>Paris dans tous ses états</h1>
+            <h3 class='text-center'> Culture, Ecologie, Gastronomie </h3>
+        </div>
+    </div>
+
+
     <div class="map_wrapper">
 
 
@@ -189,21 +188,24 @@
                 <meter id="range_cinema" min="0" max="8">2 out of 10</meter><br><br>
 
 
-
-
-
-
-
-
-
-
-
-
                 <button type="button" class='btn btn-secondary' id='seemore' onclick="backtoQuizz()"> Retour au quizz
                 </button>
 
             </div>
             <br>
+
+            <div class="solution_chart">
+                <canvas id="histo3"></canvas>
+                <div class="chart_description">
+                    Etenim si attendere diligenter, existimare vere de omni hac causa volueritis, sic constituetis,
+                    iudices, nec descensurum quemquam ad hanc accusationem fuisse, cui, utrum vellet, liceret, nec, cum
+                    descendisset, quicquam habiturum spei fuisse, nisi alicuius intolerabili libidine et nimis acerbo
+                    odio niteretur. Sed ego Atratino, humanissimo atque optimo adulescenti meo necessario, ignosco, qui
+                    habet excusationem vel pietatis vel necessitatis vel aetatis. Si voluit accusare, pietati tribuo, si
+                    iussus est, necessitati, si speravit aliquid, pueritiae. Ceteris non modo nihil ignoscendum, sed
+                    etiam acriter est resistendum.s
+                </div>
+            </div>
 
 
 
@@ -290,9 +292,6 @@
             <h3 class='text-align'> Quel arrondissement est le plus écolo? </h3>
             <div class='map_solution' id='map_solution2'>
 
-
-
-
                 <svg width="400" height="208" viewBox="2.22422457 48.81575715 0.243034997 0.0858946299999985"
                     preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" version="1.1">
 
@@ -370,17 +369,38 @@
 
 
 
-                <button type="button" class='btn btn-secondary' onclick="backtoQuizzEco()"> Retour au quizz </button>
 
             </div><br>
 
 
-            <div class="solution_chart_1">
-                    <canvas id="scatter" ></canvas>
-                    <canvas id="histo1" ></canvas>
+            <div class="solution_chart">
+                <canvas id="scatter"></canvas>
+                <div class="chart_description">
+                    Etenim si attendere diligenter, existimare vere de omni hac causa volueritis, sic constituetis,
+                    iudices, nec descensurum quemquam ad hanc accusationem fuisse, cui, utrum vellet, liceret, nec, cum
+                    descendisset, quicquam habiturum spei fuisse, nisi alicuius intolerabili libidine et nimis acerbo
+                    odio niteretur. Sed ego Atratino, humanissimo atque optimo adulescenti meo necessario, ignosco, qui
+                    habet excusationem vel pietatis vel necessitatis vel aetatis. Si voluit accusare, pietati tribuo, si
+                    iussus est, necessitati, si speravit aliquid, pueritiae. Ceteris non modo nihil ignoscendum, sed
+                    etiam acriter est resistendum.s
+
+                </div>
+                <canvas id="histo1"></canvas>
+                <div class="chart_description">
+                    Etenim si attendere diligenter, existimare vere de omni hac causa volueritis, sic constituetis,
+                    iudices, nec descensurum quemquam ad hanc accusationem fuisse, cui, utrum vellet, liceret, nec, cum
+                    descendisset, quicquam habiturum spei fuisse, nisi alicuius intolerabili libidine et nimis acerbo
+                    odio niteretur. Sed ego Atratino, humanissimo atque optimo adulescenti meo necessario, ignosco, qui
+                    habet excusationem vel pietatis vel necessitatis vel aetatis. Si voluit accusare, pietati tribuo, si
+                    iussus est, necessitati, si speravit aliquid, pueritiae. Ceteris non modo nihil ignoscendum, sed
+                    etiam acriter est resistendum.s
+                </div>
 
             </div>
-            
+
+            <button type="button" class='btn btn-secondary' onclick="backtoQuizzEco()"> Retour au quizz </button>
+
+
 
 
 
@@ -465,8 +485,6 @@
             <div class='map_solution' id='map_solution3'>
 
 
-
-
                 <svg width="400" height="208" viewBox="2.22422457 48.81575715 0.243034997 0.0858946299999985"
                     preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" version="1.1">
 
@@ -534,17 +552,79 @@
                 <text> Nombre de fastfoods : </text>
                 <text class="label" id="fastfood" x="10" y="390"></text> <br>
                 <meter id="range_fastfood" min="0" max="300">2 out of 10</meter><br><br>
-                <button type="button" class='btn btn-secondary' onclick="backtoQuizzGour()"> Retour au quizz </button>
 
 
             </div>
             <br>
 
+            <div class="solution_chart">
+                <canvas id="histo2"></canvas>
+                <div class="chart_description">
+                    Etenim si attendere diligenter, existimare vere de omni hac causa volueritis, sic constituetis,
+                    iudices, nec descensurum quemquam ad hanc accusationem fuisse, cui, utrum vellet, liceret, nec, cum
+                    descendisset, quicquam habiturum spei fuisse, nisi alicuius intolerabili libidine et nimis acerbo
+                    odio niteretur. Sed ego Atratino, humanissimo atque optimo adulescenti meo necessario, ignosco, qui
+                    habet excusationem vel pietatis vel necessitatis vel aetatis. Si voluit accusare, pietati tribuo, si
+                    iussus est, necessitati, si speravit aliquid, pueritiae. Ceteris non modo nihil ignoscendum, sed
+                    etiam acriter est resistendum.s
+                </div>
+            </div>
+
+
+
+            <button type="button" class='btn btn-secondary' onclick="backtoQuizzGour()"> Retour au quizz </button>
 
         </div>
 
+        <!-- <div style="width: 50%; float:right; height:300px;">
+            <iframe title="Restaurant &eacute;toil&eacute;s VS Fast Food: quel lien?" aria-label="Scatter Plot"
+                id="datawrapper-chart-3ARZo" src="//datawrapper.dwcdn.net/3ARZo/1/" scrolling="no" frameborder="0"
+                style="width: 0; min-width: 100% !important;" height="400"></iframe>
+            <script
+                type="text/javascript">!function () { "use strict"; window.addEventListener("message", function (a) { if (void 0 !== a.data["datawrapper-height"]) for (var e in a.data["datawrapper-height"]) { var t = document.getElementById("datawrapper-chart-" + e) || document.querySelector("iframe[src*='" + e + "']"); t && (t.style.height = a.data["datawrapper-height"][e] + "px") } }) }();</script>
+        </div>-->
 
     </div>
+
+    <footer>
+
+        <div>
+            <h4>
+                <i class="fas fa-info-circle"></i> A propos
+            </h4>
+            habiturum spei fuisse, nisi alicuius intolerabili libidine et nimis acerbo odio niteretur. Sed ego
+            Atratino, humanissimo atque optimo adulescenti meo necessario, ignosco, qui habet excusationem vel pietatis
+            vel necessitatis vel aetatis. Si voluit accusare, pietati tribuo, si iussus est, necessitati, si speravit
+            aliquid, pueritiae. Ceteris non modo nihil ignoscendum, sed etiam acriter est resistendum.
+
+
+        </div>
+
+        <div>
+
+            <h4><i class="fas fa-tree"></i> Sources</h4>
+            Etenim si attendere diligenter, existimare vere de omni hac causa volueritis, sic constituetis, iudices, nec
+            Ceteris non modo nihil ignoscendum, sed etiam acriter est resistendum.
+
+
+        </div>
+
+        <div>
+            <h4><i class="fas fa-users"></i> Equipe</h4>
+
+            <p>John doe</p>
+            <p>John doe</p>
+            <p>John doe</p>
+            <p>John doe</p>
+        </div>
+
+
+
+
+    </footer>
+
+
+
 
 
 
@@ -553,18 +633,9 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
 
-
-    <div style="width: 50%; float:left; clear:both; height:300px; ">
-        <canvas id="line-chart" width="250" height="300"></canvas>
-    </div>
-    <div style="width: 50%; float:right; height:300px;">
-        <iframe title="Restaurant &eacute;toil&eacute;s VS Fast Food: quel lien?" aria-label="Scatter Plot"
-            id="datawrapper-chart-3ARZo" src="//datawrapper.dwcdn.net/3ARZo/1/" scrolling="no" frameborder="0"
-            style="width: 0; min-width: 100% !important;" height="400"></iframe>
-        <script
-            type="text/javascript">!function () { "use strict"; window.addEventListener("message", function (a) { if (void 0 !== a.data["datawrapper-height"]) for (var e in a.data["datawrapper-height"]) { var t = document.getElementById("datawrapper-chart-" + e) || document.querySelector("iframe[src*='" + e + "']"); t && (t.style.height = a.data["datawrapper-height"][e] + "px") } }) }();</script>
-    </div>
-    <script type="text/javascript" src="js/chart_arrondissement.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js"
+        integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ"
+        crossorigin="anonymous"></script>
 
     <script type="text/javascript" src="js/script.js"></script>
 

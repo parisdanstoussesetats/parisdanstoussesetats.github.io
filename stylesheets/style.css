@@ -1,7 +1,10 @@
 body {background-color: white;}
 
 .no_display {
-    display:none !important;
+    transition: opacity 0.3s ease-out;
+    opacity: 0 !important; 
+    height: 0 !important; 
+    overflow: hidden;
 }
 .red {
     color: rgb(255, 71, 47);
@@ -114,8 +117,31 @@ polygon:hover {
     display: flex;
     flex-direction: column;
     width:40vw;
+    height: auto;
+    opacity: 1;
+    transition: all 0.3s ease-out;
     align-items: center;
     justify-content: center;
+    margin-bottom: 3rem;
+
+    
+}
+
+.header {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.text-header {
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+canvas{
+    max-height:65vh
 }
 
 .map, .map_eco, .map_gour{
@@ -127,10 +153,14 @@ polygon:hover {
     margin-bottom: 3rem;
 }
 
-.solution_chart_1 {
+.solution_chart {
     display:flex;
-    flex-direction: row;
-    width:60vw;
+    flex-direction: column;
+    width:80vw;
+}
+
+.chart_description {
+    margin:5rem;
 }
 
 
@@ -139,4 +169,32 @@ polygon:hover {
     top:0;
     right:0;
 }
+
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color:#aaa;
+    flex-grow: 1;
+    height:40vh;
+
+}
+
+footer > div {
+    margin:3rem;
+   width: 30vw;
+  flex-basis: 30vw;
+  flex-grow: 1;
+  text-align :justify
+
+}
+
+
+
+footer > div > h4{
+    text-align: center;
+    margin-bottom: 1.4rem;
+}
+
 
