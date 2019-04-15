@@ -177,7 +177,7 @@ footer {
     justify-content: space-between;
     background-color:#aaa;
     flex-grow: 1;
-    height:40vh;
+    height:auto;
 
 }
 
