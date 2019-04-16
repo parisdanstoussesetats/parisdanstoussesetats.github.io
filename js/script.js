@@ -772,7 +772,7 @@ window.myHisto3 = new Chart(ctxHisto3, {
 );
 
 //CTX scatter Eco Pollution / Espace vert
-var ctxScatter = document.getElementById('scatter').getContext('2d');
+var ctxScatter = document.getElementById("scatter").getContext('2d');
 window.myScatter = Chart.Scatter(ctxScatter, {
   data: {
     datasets: arrondissements_data.map((a, i) => {
@@ -793,32 +793,22 @@ window.myScatter = Chart.Scatter(ctxScatter, {
     },
 	scales: {
     				xAxes: 
-    				[{title: "Pollution VS Espaces verts",
-                
+    				[
 	            	scaleLabel: {
 	                    display: true,
 	                    labelString: "Superficie d'espaces verts par rapport à la taille de l'arrondissement",
 	                }
-	    			}],
+	    			],
 	    
 	    			yAxes: [
-	            	{   id: "restaurants_",
-	                gridLines: {
-	                    display:false
-	                }, 
-	                ticks: {
-	                     beginAtZero:true
-	                },
+	            
 	                scaleLabel: {
                     display: true,
-                    labelString: 'Part des restaurant étoilés ‰'}
-                }]},
-            },
-   
-   
-   
-  }
-});
+                    labelString: 'Taux de Pollution de NO2'}
+                ]},
+            }
+
+           });
 
 
 //CTX Histo déchets Jaunes / Verts
