@@ -790,7 +790,27 @@ window.myScatter = Chart.Scatter(ctxScatter, {
     title: {
       display: true,
       text: 'Pollution VS Espaces verts'
-    }
+    },
+   scales: {
+    				xAxes: 
+    				[
+	            	scaleLabel: {
+	                    display: true,
+	                    labelString: "Superficie d'espaces verts par rapport à la taille de l'arrondissement",
+	                }
+	    			],
+	    
+	    			yAxes: [
+	            
+	                scaleLabel: {
+                    display: true,
+                    labelString: 'Taux de Pollution de NO2'
+				}
+                ]
+		},
+   
+   
+   
     }
 
       });
