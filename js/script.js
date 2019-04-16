@@ -477,8 +477,8 @@ var optionsHistoMusic = {
 
 
 var optionsStackGastro = {
-  responsive: true,
-  maintainAspectRatio: false,
+  //responsive: true,
+  //maintainAspectRatio: false,
   legend: {
     position: 'right',
     labels: {
@@ -576,8 +576,8 @@ var optionsHistoDechets = {
 
 
 var optionsFastfood = {
-  responsive: true,
-  maintainAspectRatio: false,
+  //responsive: true,
+  //maintainAspectRatio: false,
   legend: {
     position: 'right'
   },
@@ -590,7 +590,7 @@ var optionsFastfood = {
   scales: {
     xAxes:
       [{
-        title: "Titre",
+        //title: "Titre",
         gridLines: {
           display: false
         },
