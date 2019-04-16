@@ -52,7 +52,7 @@ var myChart = new Chart(ctx, {
             label: 'Scores culture',
             data: scores_culture,
             backgroundColor: 
-            	'#CD6155',
+            	'#CE6B0AA',
             fillOpacity: .3,
             borderWidth: 1,
             type: "bar",
@@ -65,7 +65,7 @@ var myChart = new Chart(ctx, {
             label: 'Scores ecolo',
             data: scores_ecolo,
             backgroundColor: 
-                '#7DCEA0',
+                '#A9DFBF',
             borderWidth: 1,
             type: "bar",
             stacked: false,
