@@ -274,7 +274,7 @@ function displayInfo_gour(index) {
 
 
 
-// --------------------- Rimane charts --------------------
+// <--------------------- Rimane charts --------------------
 
 
 // <---- VARS 
