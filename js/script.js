@@ -490,6 +490,7 @@ var optionsStackGastro = {
     display: true,
     text: 'Diversité culinaire des arrondissements parisiens:le XIème au top, le VIIIéme bon dernier',
     fontSize: 18,
+    fontColor : "black",
     fontFamily: 'Arial'
   },
   scales: {
@@ -583,8 +584,9 @@ var optionsFastfood = {
   },
   title: {
     display: true,
-    text: 'Restaurant étoilés et Fast Food: Un marbré insipide?',
+    text: 'Restaurant étoilés et Fast Food: un marbré insipide?',
     fontSize: 20,
+    fonColor : 'black',
     fontFamily: 'Arial'
   },
   scales: {
@@ -789,6 +791,32 @@ window.myScatter = Chart.Scatter(ctxScatter, {
       display: true,
       text: 'Pollution VS Espaces verts'
     },
+	scales: {
+    				xAxes: 
+    				[{title: "Pollution VS Espaces verts",
+                
+	            	scaleLabel: {
+	                    display: true,
+	                    labelString: "Superficie d'espaces verts par rapport à la taille de l'arrondissement",
+	                }
+	    			}],
+	    
+	    			yAxes: [
+	            	{   id: "restaurants_",
+	                gridLines: {
+	                    display:false
+	                }, 
+	                ticks: {
+	                     beginAtZero:true
+	                },
+	                scaleLabel: {
+                    display: true,
+                    labelString: 'Part des restaurant étoilés ‰'}
+                }]},
+            },
+   
+   
+   
   }
 });
 
