@@ -52,7 +52,7 @@ var myChart = new Chart(ctx, {
             label: 'Scores culture',
             data: scores_culture,
             backgroundColor: 
-            	'#CE6B0AA',
+            	'#B23229',
             fillOpacity: .3,
             borderWidth: 1,
             type: "bar",
