@@ -1,13 +1,4 @@
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
-
-<div style="width: 500px;">
-    <canvas id="line-chart" width="400" height="400"></canvas>
-</div>
-
-<script>
-
-    
-var ctx = document.getElementById("line-chart").getContext('2d'); 
+var ctx = document.getElementById("score").getContext('2d'); 
 
 var arrondissements = ['75001','75002','75003','75004','75005','75006','75007','75008','75009','75010','75011','75012','75013','75014','75015','75016','75017','75018','75019','75020'/*, 'Tout Paris'*/];
 
@@ -102,4 +93,3 @@ var myChart = new Chart(ctx, {
     options: options
 }
 );
-</script>
