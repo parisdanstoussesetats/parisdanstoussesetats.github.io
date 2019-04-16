@@ -465,7 +465,7 @@ var optionsHistoMusic = {
         stacked: true,
         position: "left",
         scaleLabel: {
-          isplay: true,
+          display: true,
           labelString: 'Nombre de concerts'
         }
       },
@@ -534,7 +534,7 @@ var optionsHistoDechets = {
       stacked: true,
       scaleLabel: {
         display: true,
-        labelString: 'arrondissements'
+        labelString: 'Arrondissements'
       }
     }],
 
