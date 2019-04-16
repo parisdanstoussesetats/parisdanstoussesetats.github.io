@@ -550,7 +550,7 @@ var optionsHistoDechets = {
         stacked: false,
         position: "left",
         scaleLabel: {
-          isplay: true,
+          display: true,
           labelString: 'Tonnage déchets'
         }
       },
