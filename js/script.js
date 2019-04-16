@@ -804,8 +804,10 @@ window.myScatter = Chart.Scatter(ctxScatter, {
 	            
 	                scaleLabel: {
                     display: true,
-                    labelString: 'Taux de Pollution de NO2'}
-                ]},
+                    labelString: 'Taux de Pollution de NO2'
+				}
+                ]
+		},
             }
 
            });
